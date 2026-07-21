@@ -1,0 +1,134 @@
+/* Custom Kerala Theme Colors Setup */
+:root {
+  --banana-leaf-green: #143f16;
+  --clay-terracotta: #a64b2a;
+  --kasavu-gold: #d4af37;
+  --kerala-cream: #fdfbf7;
+  --charcoal-dark: #212529;
+}
+
+/* Global Elements Adjustments */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--kerala-cream);
+  color: var(--charcoal-dark);
+}
+
+h1,
+h2,
+h3,
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+}
+
+/* Header Utilities */
+.bg-kerala-green {
+  background-color: var(--banana-leaf-green) !important;
+  border-bottom: 3px solid var(--kasavu-gold);
+}
+
+.navbar-brand {
+  color: var(--kasavu-gold) !important;
+}
+
+/* Typography Color Modifiers */
+.text-terracotta {
+  color: var(--clay-terracotta) !important;
+}
+
+.accent-gold-text {
+  color: var(--kasavu-gold);
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+/* Hero Section Style Setup */
+.hero-banner {
+  background:
+    linear-gradient(rgba(20, 63, 22, 0.78), rgba(20, 63, 22, 0.78)),
+    url("https://images.unsplash.com/photo-1596797038530-2c107229654b?q=80&w=1600")
+      center/cover no-repeat;
+  min-height: 60vh;
+}
+
+.style-subtext {
+  max-width: 650px;
+  opacity: 0.9;
+}
+
+/* Section Header Separator Line */
+.title-divider {
+  height: 3px;
+  width: 70px;
+  background-color: var(--clay-terracotta);
+  border-radius: 2px;
+}
+
+/* Specific Custom Card Container Properties */
+.dish-container {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 0.3s ease;
+  height: 390px;
+}
+
+.dish-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(20, 63, 22, 0.15);
+}
+
+.dish-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* The dynamic gradient text background wrapper */
+.dish-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* Deep semi-transparent dark gradient to guarantee text contrast */
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.88) 45%);
+  padding: 35px 24px 24px 24px;
+  color: #ffffff;
+}
+
+.dish-title {
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--kasavu-gold);
+  margin-bottom: 6px;
+}
+
+.dish-description {
+  font-size: 0.88rem;
+  opacity: 0.85;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Form Action Buttons Modifications */
+.btn-terracotta {
+  background-color: var(--clay-terracotta);
+  color: #ffffff;
+  border: 2px solid var(--clay-terracotta);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.btn-terracotta:hover {
+  background-color: transparent;
+  color: var(--clay-terracotta);
+  border-color: var(--clay-terracotta);
+}
+
+/* Footer Properties */
+footer {
+  border-top: 3px solid var(--kasavu-gold);
+}
